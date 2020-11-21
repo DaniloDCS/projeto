@@ -1,47 +1,81 @@
+/*
+    TIPOS DE SELETORES CSS
+    . Class
+    # Id
+    button - Universal
+    div button - Seletor de filho
+    div, button - Todos divs e buttons
+*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 .menu {
+    padding: 0;
+}
+.menu-itens {
     display: flex;
+    align-items: center;
+    float: right;
 }
-.link {
-    display: grid;  
-    margin-right: 5px;
-} 
-.link button {
-    background-color: transparent;
-    height: 50px;
-    width: 100px;
-    color: rgb(73, 219, 244);
-    font-size: 20px;
-    border: none;
-    font-weight: 600;
+.menu-itens * {
+    padding: 4px;
+    font-size: 14px;
+    color: rgb(124, 123, 123);
 }
-.link button:hover {
-    color: rgb(12, 167, 194);
+.menu-itens i {
+    font-size: 18px;
 }
-.link label {
-    display: flex;
-    height: 2px;
-}
-.link button:hover + label {
-    background-color: rgb(12, 167, 194);
-    animation: bar 0.7s;
-}
-body {
-    background-color: rgb(0, 0, 0);
-}
-
-#introducao {
-    width: 100vw;
-    height: 90vh;
+.img-google {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-@keyframes bar {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 100%;
-    }
+.user-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+.searche {
+    padding-top: 50px;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.busca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.busca div {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(238, 232, 232);
+    padding: 14px;
+    border-radius: 100px;
+    margin-top: 20px;
+    width: 600px;
+    height: 18px;
+}
+.busca div:hover {
+    box-shadow: -1px 1px 2px 2px rgb(236, 233, 233);
+    border-color: transparent;
+}
+.busca input {
+    border: none;
+    font-size: 20px;
+    height: 100%;
+    outline: none;
+    margin: 0 10px 0 10px;
+    width: 82%;
+}
+.flex {
+    width: 100%;
+}
+.busca i {
+    font-size: 18px;
+    margin: 0 6px 0 6px;
+    color: rgb(58, 56, 56);
 }
